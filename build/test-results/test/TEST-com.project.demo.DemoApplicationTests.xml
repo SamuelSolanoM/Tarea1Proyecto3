@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.project.demo.DemoApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-09-09T03:01:48" hostname="SAMUEL" time="0.368">
+  <properties/>
+  <testcase name="contextLoads()" classname="com.project.demo.DemoApplicationTests" time="0.368"/>
+  <system-out><![CDATA[21:01:43.820 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.project.demo.DemoApplicationTests]: DemoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+21:01:44.024 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.project.demo.DemoApplication for test class com.project.demo.DemoApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.5)
+
+2025-09-08T21:01:44.341-06:00  INFO 7324 --- [demo] [    Test worker] com.project.demo.DemoApplicationTests    : Starting DemoApplicationTests using Java 21.0.8 with PID 7324 (started by ssola in D:\RepoProyecto3\java-spring)
+2025-09-08T21:01:44.343-06:00  INFO 7324 --- [demo] [    Test worker] com.project.demo.DemoApplicationTests    : No active profile set, falling back to 1 default profile: "default"
+2025-09-08T21:01:45.049-06:00  INFO 7324 --- [demo] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-08T21:01:45.101-06:00  INFO 7324 --- [demo] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47 ms. Found 8 JPA repository interfaces.
+2025-09-08T21:01:45.570-06:00  INFO 7324 --- [demo] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-08T21:01:45.636-06:00  INFO 7324 --- [demo] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-09-08T21:01:45.665-06:00  INFO 7324 --- [demo] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-08T21:01:45.863-06:00  INFO 7324 --- [demo] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-08T21:01:45.889-06:00  INFO 7324 --- [demo] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-09-08T21:01:45.964-06:00  INFO 7324 --- [demo] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@3d71e10b
+2025-09-08T21:01:45.965-06:00  INFO 7324 --- [demo] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-09-08T21:01:45.987-06:00  WARN 7324 --- [demo] [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-08T21:01:46.725-06:00  INFO 7324 --- [demo] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-08T21:01:46.766-06:00  INFO 7324 --- [demo] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-08T21:01:46.955-06:00  INFO 7324 --- [demo] [    Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-09-08T21:01:47.326-06:00  WARN 7324 --- [demo] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-08T21:01:47.738-06:00  INFO 7324 --- [demo] [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5f2312f3, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@21590b35, org.springframework.security.web.context.SecurityContextHolderFilter@10bf2726, org.springframework.security.web.header.HeaderWriterFilter@250c5892, org.springframework.web.filter.CorsFilter@54d3b4fe, org.springframework.security.web.authentication.logout.LogoutFilter@8fa4647, com.project.demo.logic.entity.auth.JwtAuthenticationFilter@663d59ed, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1caf77f6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@246f9fa8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6e48dc84, org.springframework.security.web.session.SessionManagementFilter@401b7109, org.springframework.security.web.access.ExceptionTranslationFilter@123e87cd, org.springframework.security.web.access.intercept.AuthorizationFilter@57352624]
+Hibernate: select r1_0.id,r1_0.created_at,r1_0.description,r1_0.name,r1_0.updated_at from rol r1_0 where r1_0.name=?
+com.project.demo.logic.entity.rol.Role@c2cc406
+Hibernate: select r1_0.id,r1_0.created_at,r1_0.description,r1_0.name,r1_0.updated_at from rol r1_0 where r1_0.name=?
+com.project.demo.logic.entity.rol.Role@1c8bf01d
+Hibernate: select r1_0.id,r1_0.created_at,r1_0.description,r1_0.name,r1_0.updated_at from rol r1_0 where r1_0.name=?
+com.project.demo.logic.entity.rol.Role@298eca94
+Hibernate: select r1_0.id,r1_0.created_at,r1_0.description,r1_0.name,r1_0.updated_at from rol r1_0 where r1_0.name=?
+Hibernate: select u1_0.id,u1_0.created_at,u1_0.email,u1_0.lastname,u1_0.name,u1_0.password,u1_0.role_id,u1_0.updated_at from user u1_0 where u1_0.email=?
+Hibernate: select r1_0.id,r1_0.created_at,r1_0.description,r1_0.name,r1_0.updated_at from rol r1_0 where r1_0.id=?
+Hibernate: select o1_0.user_id,o1_0.id,o1_0.description,o1_0.total from `order` o1_0 where o1_0.user_id=?
+2025-09-08T21:01:48.102-06:00  INFO 7324 --- [demo] [    Test worker] com.project.demo.DemoApplicationTests    : Started DemoApplicationTests in 3.93 seconds (process running for 5.024)
+]]></system-out>
+  <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (C:\Users\ssola\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy-agent\1.14.13\979ce25f7d3096a2e82214ba7dc972a05ce7a171\byte-buddy-agent-1.14.13.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+</testsuite>
